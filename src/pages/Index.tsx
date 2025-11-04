@@ -274,7 +274,48 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="awards" className="py-16 bg-white">
+      <section id="pricing" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-4">Стоимость и оплата</h2>
+          <p className="text-center text-gray-600 mb-12">Все олимпиады полностью бесплатные</p>
+          <div className="max-w-2xl mx-auto">
+            <Card className="border-2 border-lime-500">
+              <CardHeader>
+                <Badge className="w-fit mb-2 bg-lime-500">Бесплатно</Badge>
+                <CardTitle className="font-heading text-2xl">Участие в олимпиаде</CardTitle>
+                <CardDescription>Всё необходимое для прохождения и получения наград</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-lime-500 mt-0.5" />
+                  <span className="text-sm">Доступ ко всем заданиям</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-lime-500 mt-0.5" />
+                  <span className="text-sm">Электронный диплом в PDF</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-lime-500 mt-0.5" />
+                  <span className="text-sm">Результаты и статистика</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-lime-500 mt-0.5" />
+                  <span className="text-sm">Личный кабинет участника</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-lime-500 mt-0.5" />
+                  <span className="text-sm">Неограниченное количество попыток</span>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button onClick={() => scrollToSection('olympiads')} className="w-full bg-lime-500 hover:bg-lime-600 text-white">Начать бесплатно</Button>
+              </CardFooter>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="awards" className="py-16 bg-gradient-to-b from-white to-lime-50">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-4">Награды</h2>
           <p className="text-center text-gray-600 mb-12">Каждый участник получает награду за свои достижения</p>
@@ -286,7 +327,7 @@ const Index = () => {
                 <CardDescription>За результат 90-100 баллов</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600">Электронный диплом + возможность заказать печатную версию</p>
+                <p className="text-sm text-gray-600">Электронный диплом в высоком качестве PDF</p>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-xl transition-all hover:-translate-y-1">
@@ -313,76 +354,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="pricing" className="py-16 bg-gradient-to-b from-white to-lime-50">
-        <div className="container mx-auto px-4">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-4">Стоимость и оплата</h2>
-          <p className="text-center text-gray-600 mb-12">Прозрачные цены без скрытых платежей</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <Card className="border-2 border-lime-500">
-              <CardHeader>
-                <Badge className="w-fit mb-2 bg-lime-500">Бесплатно</Badge>
-                <CardTitle className="font-heading text-2xl">Участие в олимпиаде</CardTitle>
-                <CardDescription>Всё необходимое для прохождения</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <Icon name="Check" size={20} className="text-lime-500 mt-0.5" />
-                  <span className="text-sm">Доступ ко всем заданиям</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <Icon name="Check" size={20} className="text-lime-500 mt-0.5" />
-                  <span className="text-sm">Электронный диплом</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <Icon name="Check" size={20} className="text-lime-500 mt-0.5" />
-                  <span className="text-sm">Результаты и статистика</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <Icon name="Check" size={20} className="text-lime-500 mt-0.5" />
-                  <span className="text-sm">Личный кабинет участника</span>
-                </div>
-              </CardContent>
-              <CardFooter>
-                <Button className="w-full bg-lime-500 hover:bg-lime-600 text-white">Начать бесплатно</Button>
-              </CardFooter>
-            </Card>
-            
-            <Card>
-              <CardHeader>
-                <Badge className="w-fit mb-2" variant="outline">Опционально</Badge>
-                <CardTitle className="font-heading text-2xl">Печатные материалы</CardTitle>
-                <CardDescription>Физические награды с доставкой</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <Icon name="Package" size={20} className="text-gray-500 mt-0.5" />
-                  <div>
-                    <div className="text-sm font-semibold">Печатный диплом</div>
-                    <div className="text-xs text-gray-500">250 ₽ + доставка</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <Icon name="Package" size={20} className="text-gray-500 mt-0.5" />
-                  <div>
-                    <div className="text-sm font-semibold">Медаль участника</div>
-                    <div className="text-xs text-gray-500">350 ₽ + доставка</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <Icon name="Package" size={20} className="text-gray-500 mt-0.5" />
-                  <div>
-                    <div className="text-sm font-semibold">Набор «Победитель»</div>
-                    <div className="text-xs text-gray-500">550 ₽ (диплом + медаль + сертификат)</div>
-                  </div>
-                </div>
-              </CardContent>
-              <CardFooter>
-                <Button variant="outline" className="w-full">Подробнее</Button>
-              </CardFooter>
-            </Card>
-          </div>
-        </div>
-      </section>
+
 
       <section id="olympiads" className="py-16 bg-white">
         <div className="container mx-auto px-4">
