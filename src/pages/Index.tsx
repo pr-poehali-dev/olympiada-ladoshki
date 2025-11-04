@@ -351,12 +351,57 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
+          
+          <div className="mt-16">
+            <h3 className="font-heading text-2xl font-bold text-center mb-8">Наши победители</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              <div className="relative overflow-hidden rounded-2xl group">
+                <img 
+                  src="https://cdn.poehali.dev/projects/d99b9d06-1129-4ff7-847b-ad0e0f012229/files/ade2d8e8-08c4-41bc-9b9c-d90ab6da51ad.jpg" 
+                  alt="Победитель с дипломом"
+                  className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                  <div className="text-white">
+                    <div className="font-semibold text-lg">Диплом I степени</div>
+                    <div className="text-sm opacity-90">Математика, 3 класс</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="relative overflow-hidden rounded-2xl group">
+                <img 
+                  src="https://cdn.poehali.dev/projects/d99b9d06-1129-4ff7-847b-ad0e0f012229/files/a68dfaf6-db8e-4b83-a254-32d29915c917.jpg" 
+                  alt="Группа победителей"
+                  className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                  <div className="text-white">
+                    <div className="font-semibold text-lg">Командная победа</div>
+                    <div className="text-sm opacity-90">Русский язык, 2 класс</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="relative overflow-hidden rounded-2xl group">
+                <img 
+                  src="https://cdn.poehali.dev/projects/d99b9d06-1129-4ff7-847b-ad0e0f012229/files/72e059cd-abc9-4831-8d3d-0208ed27f901.jpg" 
+                  alt="Электронный диплом"
+                  className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                  <div className="text-white">
+                    <div className="font-semibold text-lg">Электронный диплом</div>
+                    <div className="text-sm opacity-90">Окружающий мир, 4 класс</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-
-
-      <section id="olympiads" className="py-16 bg-white">
+      <section id="olympiads" className="py-16 bg-gradient-to-b from-lime-50 to-white">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-4">Ближайшие олимпиады</h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
