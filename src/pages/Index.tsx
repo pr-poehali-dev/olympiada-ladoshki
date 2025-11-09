@@ -484,7 +484,7 @@ const Index = () => {
       <section id="results" className="py-16 bg-gradient-to-b from-white to-lime-50">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-4">Итоги олимпиад</h2>
-          <p className="text-center text-gray-600 mb-12">Найди свой результат и скачай диплом</p>
+          <p className="text-center text-gray-600 mb-12">Найди свой результат </p>
           
           <div className="max-w-2xl mx-auto">
             <Card>
